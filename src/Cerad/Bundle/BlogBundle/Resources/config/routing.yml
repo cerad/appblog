@@ -1,3 +1,6 @@
-cerad_blog_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: CeradBlogBundle:Default:index }
+cerad_blog__blog_show:
+    pattern:  /show/{blogNum}/{blogSlug}
+    defaults: 
+        _controller: CeradBlogBundle:Blog/Show:show
+        blogSlug: null
+

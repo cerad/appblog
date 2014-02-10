@@ -24,5 +24,7 @@ class CeradBlogExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+        
+        $container->setParameter('cerad_blog__resources_dir',__DIR__.'/../Resources');
     }
 }
